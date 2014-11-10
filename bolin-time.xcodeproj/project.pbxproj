@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		079C855E1A1093770066BE4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079C855D1A1093770066BE4C /* AppDelegate.swift */; };
+		079C85601A1093770066BE4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079C855F1A1093770066BE4C /* ViewController.swift */; };
+		079C85631A1093770066BE4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 079C85611A1093770066BE4C /* Main.storyboard */; };
+		079C85651A1093770066BE4C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 079C85641A1093770066BE4C /* Images.xcassets */; };
+		079C85681A1093770066BE4C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 079C85661A1093770066BE4C /* LaunchScreen.xib */; };
+		079C85741A1093770066BE4C /* bolin_timeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079C85731A1093770066BE4C /* bolin_timeTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		079C856E1A1093770066BE4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 079C85501A1093770066BE4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 079C85571A1093770066BE4C;
+			remoteInfo = "bolin-time";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		079C85581A1093770066BE4C /* bolin-time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bolin-time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		079C855C1A1093770066BE4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		079C855D1A1093770066BE4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		079C855F1A1093770066BE4C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		079C85621A1093770066BE4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		079C85641A1093770066BE4C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		079C85671A1093770066BE4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		079C856D1A1093770066BE4C /* bolin-timeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "bolin-timeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		079C85721A1093770066BE4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		079C85731A1093770066BE4C /* bolin_timeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bolin_timeTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		079C85551A1093770066BE4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		079C856A1A1093770066BE4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		079C854F1A1093770066BE4C = {
+			isa = PBXGroup;
+			children = (
+				079C855A1A1093770066BE4C /* bolin-time */,
+				079C85701A1093770066BE4C /* bolin-timeTests */,
+				079C85591A1093770066BE4C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		079C85591A1093770066BE4C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				079C85581A1093770066BE4C /* bolin-time.app */,
+				079C856D1A1093770066BE4C /* bolin-timeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		079C855A1A1093770066BE4C /* bolin-time */ = {
+			isa = PBXGroup;
+			children = (
+				079C855D1A1093770066BE4C /* AppDelegate.swift */,
+				079C855F1A1093770066BE4C /* ViewController.swift */,
+				079C85611A1093770066BE4C /* Main.storyboard */,
+				079C85641A1093770066BE4C /* Images.xcassets */,
+				079C85661A1093770066BE4C /* LaunchScreen.xib */,
+				079C855B1A1093770066BE4C /* Supporting Files */,
+			);
+			path = "bolin-time";
+			sourceTree = "<group>";
+		};
+		079C855B1A1093770066BE4C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				079C855C1A1093770066BE4C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		079C85701A1093770066BE4C /* bolin-timeTests */ = {
+			isa = PBXGroup;
+			children = (
+				079C85731A1093770066BE4C /* bolin_timeTests.swift */,
+				079C85711A1093770066BE4C /* Supporting Files */,
+			);
+			path = "bolin-timeTests";
+			sourceTree = "<group>";
+		};
+		079C85711A1093770066BE4C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				079C85721A1093770066BE4C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		079C85571A1093770066BE4C /* bolin-time */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 079C85771A1093770066BE4C /* Build configuration list for PBXNativeTarget "bolin-time" */;
+			buildPhases = (
+				079C85541A1093770066BE4C /* Sources */,
+				079C85551A1093770066BE4C /* Frameworks */,
+				079C85561A1093770066BE4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "bolin-time";
+			productName = "bolin-time";
+			productReference = 079C85581A1093770066BE4C /* bolin-time.app */;
+			productType = "com.apple.product-type.application";
+		};
+		079C856C1A1093770066BE4C /* bolin-timeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 079C857A1A1093770066BE4C /* Build configuration list for PBXNativeTarget "bolin-timeTests" */;
+			buildPhases = (
+				079C85691A1093770066BE4C /* Sources */,
+				079C856A1A1093770066BE4C /* Frameworks */,
+				079C856B1A1093770066BE4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				079C856F1A1093770066BE4C /* PBXTargetDependency */,
+			);
+			name = "bolin-timeTests";
+			productName = "bolin-timeTests";
+			productReference = 079C856D1A1093770066BE4C /* bolin-timeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		079C85501A1093770066BE4C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Test;
+				TargetAttributes = {
+					079C85571A1093770066BE4C = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					079C856C1A1093770066BE4C = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 079C85571A1093770066BE4C;
+					};
+				};
+			};
+			buildConfigurationList = 079C85531A1093770066BE4C /* Build configuration list for PBXProject "bolin-time" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 079C854F1A1093770066BE4C;
+			productRefGroup = 079C85591A1093770066BE4C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				079C85571A1093770066BE4C /* bolin-time */,
+				079C856C1A1093770066BE4C /* bolin-timeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		079C85561A1093770066BE4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				079C85631A1093770066BE4C /* Main.storyboard in Resources */,
+				079C85681A1093770066BE4C /* LaunchScreen.xib in Resources */,
+				079C85651A1093770066BE4C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		079C856B1A1093770066BE4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		079C85541A1093770066BE4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				079C85601A1093770066BE4C /* ViewController.swift in Sources */,
+				079C855E1A1093770066BE4C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		079C85691A1093770066BE4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				079C85741A1093770066BE4C /* bolin_timeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		079C856F1A1093770066BE4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 079C85571A1093770066BE4C /* bolin-time */;
+			targetProxy = 079C856E1A1093770066BE4C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		079C85611A1093770066BE4C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				079C85621A1093770066BE4C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		079C85661A1093770066BE4C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				079C85671A1093770066BE4C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		079C85751A1093770066BE4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		079C85761A1093770066BE4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		079C85781A1093770066BE4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "bolin-time/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		079C85791A1093770066BE4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "bolin-time/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		079C857B1A1093770066BE4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "bolin-timeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bolin-time.app/bolin-time";
+			};
+			name = Debug;
+		};
+		079C857C1A1093770066BE4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "bolin-timeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bolin-time.app/bolin-time";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		079C85531A1093770066BE4C /* Build configuration list for PBXProject "bolin-time" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				079C85751A1093770066BE4C /* Debug */,
+				079C85761A1093770066BE4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		079C85771A1093770066BE4C /* Build configuration list for PBXNativeTarget "bolin-time" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				079C85781A1093770066BE4C /* Debug */,
+				079C85791A1093770066BE4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		079C857A1A1093770066BE4C /* Build configuration list for PBXNativeTarget "bolin-timeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				079C857B1A1093770066BE4C /* Debug */,
+				079C857C1A1093770066BE4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 079C85501A1093770066BE4C /* Project object */;
+}
