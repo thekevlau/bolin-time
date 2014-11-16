@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>CAC6E6AB-B297-49BA-BC9F-52DBCE98D9B9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>bolin-time</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8567F368461B0EE3F53FAAE8FC842413D725364C</key>
+		<string>github.com:thekevlau/bolin-time.git</string>
+		<key>948616819EEF046775FDD90E14A9C51FDBABDA73</key>
+		<string>github.com:alex-fung/zest.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>bolin-time.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8567F368461B0EE3F53FAAE8FC842413D725364C</key>
+		<string>..</string>
+		<key>948616819EEF046775FDD90E14A9C51FDBABDA73</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:thekevlau/bolin-time.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8567F368461B0EE3F53FAAE8FC842413D725364C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>948616819EEF046775FDD90E14A9C51FDBABDA73</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8567F368461B0EE3F53FAAE8FC842413D725364C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>bolin-time</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -9,10 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet var playerView: YTPlayerView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        playerView.loadWithVideoId("M7lc1UVf-VE")
     }
 
     override func didReceiveMemoryWarning() {

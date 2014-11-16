@@ -13,6 +13,7 @@
 		079C85651A1093770066BE4C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 079C85641A1093770066BE4C /* Images.xcassets */; };
 		079C85681A1093770066BE4C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 079C85661A1093770066BE4C /* LaunchScreen.xib */; };
 		079C85741A1093770066BE4C /* bolin_timeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079C85731A1093770066BE4C /* bolin_timeTests.swift */; };
+		79D56613AF4C430192C383AB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 317B443CE46144ADB7757CA0 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +27,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07057A1F1A194351004546F1 /* YTPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YTPlayerView.h; path = "../Pods/youtube-ios-player-helper/Classes/YTPlayerView.h"; sourceTree = "<group>"; };
+		07057A201A19436D004546F1 /* YTPlayerView-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YTPlayerView-Bridging-Header.h"; sourceTree = "<group>"; };
 		079C85581A1093770066BE4C /* bolin-time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bolin-time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		079C855C1A1093770066BE4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		079C855D1A1093770066BE4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +39,8 @@
 		079C856D1A1093770066BE4C /* bolin-timeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "bolin-timeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		079C85721A1093770066BE4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		079C85731A1093770066BE4C /* bolin_timeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bolin_timeTests.swift; sourceTree = "<group>"; };
+		317B443CE46144ADB7757CA0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		949080E9CFB34EFD8C1042DD /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79D56613AF4C430192C383AB /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +68,8 @@
 				079C855A1A1093770066BE4C /* bolin-time */,
 				079C85701A1093770066BE4C /* bolin-timeTests */,
 				079C85591A1093770066BE4C /* Products */,
+				949080E9CFB34EFD8C1042DD /* Pods.xcconfig */,
+				BF7EC1A9B6D745B99C05D90E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +85,8 @@
 		079C855A1A1093770066BE4C /* bolin-time */ = {
 			isa = PBXGroup;
 			children = (
+				07057A1F1A194351004546F1 /* YTPlayerView.h */,
+				07057A201A19436D004546F1 /* YTPlayerView-Bridging-Header.h */,
 				079C855D1A1093770066BE4C /* AppDelegate.swift */,
 				079C855F1A1093770066BE4C /* ViewController.swift */,
 				079C85611A1093770066BE4C /* Main.storyboard */,
@@ -112,6 +122,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		BF7EC1A9B6D745B99C05D90E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				317B443CE46144ADB7757CA0 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +137,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 079C85771A1093770066BE4C /* Build configuration list for PBXNativeTarget "bolin-time" */;
 			buildPhases = (
+				6D48AE66996848DDB9E76CAA /* Check Pods Manifest.lock */,
 				079C85541A1093770066BE4C /* Sources */,
 				079C85551A1093770066BE4C /* Frameworks */,
 				079C85561A1093770066BE4C /* Resources */,
+				D2C81FA2472D4BBFA0A28FCE /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -206,6 +226,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6D48AE66996848DDB9E76CAA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D2C81FA2472D4BBFA0A28FCE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		079C85541A1093770066BE4C /* Sources */ = {
@@ -334,21 +387,25 @@
 		};
 		079C85781A1093770066BE4C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 949080E9CFB34EFD8C1042DD /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "bolin-time/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/AlexanderFung/Sites/bolin-time/bolin-time/YTPlayerView-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		079C85791A1093770066BE4C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 949080E9CFB34EFD8C1042DD /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "bolin-time/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/AlexanderFung/Sites/bolin-time/bolin-time/YTPlayerView-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -405,6 +462,7 @@
 				079C85791A1093770066BE4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		079C857A1A1093770066BE4C /* Build configuration list for PBXNativeTarget "bolin-timeTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +471,7 @@
 				079C857C1A1093770066BE4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
