@@ -10,18 +10,36 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet var playerView: YTPlayerView!
-
+    @IBOutlet var datePicker: UIDatePicker!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        playerView.loadWithVideoId("M7lc1UVf-VE")
+        playerView.loadWithVideoId("GXEGMus7W_8")
     }
 
+    @IBAction func works(sender: AnyObject) {
+        println("it works!")
+        var date = datePicker.date
+        println("\(date)")
+        println("It works!")
+        var now = NSDate()
+        println("\(now)")
+        var interval = date.timeIntervalSinceDate(now)
+        println("\(interval)")
+        NSTimer.scheduledTimerWithTimeInterval(interval, target: self, selector: Selector("timerDidFire"), userInfo: nil, repeats: false)
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    func timerDidFire(){
+        println("Fire!")
+        playerView.playVideo()
+    }
 
 }
 
