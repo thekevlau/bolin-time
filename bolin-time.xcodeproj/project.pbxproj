@@ -13,6 +13,7 @@
 		079C85651A1093770066BE4C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 079C85641A1093770066BE4C /* Images.xcassets */; };
 		079C85681A1093770066BE4C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 079C85661A1093770066BE4C /* LaunchScreen.xib */; };
 		079C85741A1093770066BE4C /* bolin_timeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079C85731A1093770066BE4C /* bolin_timeTests.swift */; };
+		0AE73D1D1A2015D700DA2882 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE73D1C1A2015D700DA2882 /* CoreData.framework */; };
 		79D56613AF4C430192C383AB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 317B443CE46144ADB7757CA0 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -27,7 +28,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		07057A1F1A194351004546F1 /* YTPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YTPlayerView.h; path = "../Pods/youtube-ios-player-helper/Classes/YTPlayerView.h"; sourceTree = "<group>"; };
 		07057A201A19436D004546F1 /* YTPlayerView-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YTPlayerView-Bridging-Header.h"; sourceTree = "<group>"; };
 		079C85581A1093770066BE4C /* bolin-time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bolin-time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		079C855C1A1093770066BE4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -39,6 +39,7 @@
 		079C856D1A1093770066BE4C /* bolin-timeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "bolin-timeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		079C85721A1093770066BE4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		079C85731A1093770066BE4C /* bolin_timeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bolin_timeTests.swift; sourceTree = "<group>"; };
+		0AE73D1C1A2015D700DA2882 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		317B443CE46144ADB7757CA0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		949080E9CFB34EFD8C1042DD /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -48,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AE73D1D1A2015D700DA2882 /* CoreData.framework in Frameworks */,
 				79D56613AF4C430192C383AB /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,7 +87,6 @@
 		079C855A1A1093770066BE4C /* bolin-time */ = {
 			isa = PBXGroup;
 			children = (
-				07057A1F1A194351004546F1 /* YTPlayerView.h */,
 				07057A201A19436D004546F1 /* YTPlayerView-Bridging-Header.h */,
 				079C855D1A1093770066BE4C /* AppDelegate.swift */,
 				079C855F1A1093770066BE4C /* ViewController.swift */,
@@ -125,6 +126,7 @@
 		BF7EC1A9B6D745B99C05D90E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0AE73D1C1A2015D700DA2882 /* CoreData.framework */,
 				317B443CE46144ADB7757CA0 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -393,7 +395,7 @@
 				INFOPLIST_FILE = "bolin-time/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/AlexanderFung/Sites/bolin-time/bolin-time/YTPlayerView-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "./bolin-time/YTPlayerView-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -405,7 +407,7 @@
 				INFOPLIST_FILE = "bolin-time/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/AlexanderFung/Sites/bolin-time/bolin-time/YTPlayerView-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "./bolin-time/YTPlayerView-Bridging-Header.h";
 			};
 			name = Release;
 		};

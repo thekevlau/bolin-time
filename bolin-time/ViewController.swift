@@ -7,14 +7,21 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController {
     @IBOutlet var playerView: YTPlayerView!
     @IBOutlet var datePicker: UIDatePicker!
     @IBOutlet var linkField: UITextField!
     
+    lazy var managedObjectContext : NSManagedObjectContext? = {
+        let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        return appDelegate.managedObjectContext
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
