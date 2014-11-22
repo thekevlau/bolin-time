@@ -28,7 +28,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		07057A1F1A194351004546F1 /* YTPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YTPlayerView.h; path = "../Pods/youtube-ios-player-helper/Classes/YTPlayerView.h"; sourceTree = "<group>"; };
 		07057A201A19436D004546F1 /* YTPlayerView-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YTPlayerView-Bridging-Header.h"; sourceTree = "<group>"; };
 		079C85581A1093770066BE4C /* bolin-time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bolin-time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		079C855C1A1093770066BE4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -88,7 +87,6 @@
 		079C855A1A1093770066BE4C /* bolin-time */ = {
 			isa = PBXGroup;
 			children = (
-				07057A1F1A194351004546F1 /* YTPlayerView.h */,
 				07057A201A19436D004546F1 /* YTPlayerView-Bridging-Header.h */,
 				079C855D1A1093770066BE4C /* AppDelegate.swift */,
 				079C855F1A1093770066BE4C /* ViewController.swift */,
@@ -397,7 +395,7 @@
 				INFOPLIST_FILE = "bolin-time/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/AlexanderFung/Sites/bolin-time/bolin-time/YTPlayerView-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "./bolin-time/YTPlayerView-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -409,7 +407,7 @@
 				INFOPLIST_FILE = "bolin-time/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/AlexanderFung/Sites/bolin-time/bolin-time/YTPlayerView-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "./bolin-time/YTPlayerView-Bridging-Header.h";
 			};
 			name = Release;
 		};
