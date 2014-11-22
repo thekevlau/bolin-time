@@ -1,6 +1,8 @@
 .DS_Store
 *.swp
 *~.nib
+bolin-time.xcodeproj/xcuserdata/**
+bolin-time.xcworkspace/xcuserdata/**
 
 build/
 
