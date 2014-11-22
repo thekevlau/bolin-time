@@ -13,10 +13,14 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    lazy var persistentStoreCoordinator: NSPersistentStoreCoordinator? = {
+        return nil
+    }()
 
     lazy var managedObjectContext: NSManagedObjectContext? = {
         let coordinator = self.persistentStoreCoordinator
-        if coordinator = nil {
+        if coordinator == nil {
             return nil
         }
         var managedObjectContext = NSManagedObjectContext()
