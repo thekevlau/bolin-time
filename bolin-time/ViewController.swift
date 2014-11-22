@@ -11,29 +11,64 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet var playerView: YTPlayerView!
     @IBOutlet var datePicker: UIDatePicker!
+    @IBOutlet var linkField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        playerView.loadWithVideoId("GXEGMus7W_8")
     }
 
     @IBAction func works(sender: AnyObject) {
-        println("it works!")
-        var date = datePicker.date
-        println("\(date)")
-        println("It works!")
-        var now = NSDate()
-        println("\(now)")
-        var interval = date.timeIntervalSinceDate(now)
-        println("\(interval)")
-        NSTimer.scheduledTimerWithTimeInterval(interval, target: self, selector: Selector("timerDidFire"), userInfo: nil, repeats: false)
+        let link = NSURL(string: linkField.text)
+        if(!verifyYoutubeLink(link)){
+            alertInvalidLink()
+            return
+        }
         
+        playerView.loadWithVideoId(extractIdFromLink(link))
+        
+        var date = datePicker.date
+        var now = NSDate()
+        var interval = date.timeIntervalSinceDate(now)
+        NSTimer.scheduledTimerWithTimeInterval(interval, target: self, selector: Selector("timerDidFire"), userInfo: nil, repeats: false)
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func verifyYoutubeLink(link: NSURL?) -> Bool{
+        if(link == nil){
+            return false
+        }
+        
+        let host = link!.host
+        println(host)
+        
+        return (host! == "youtube.com" || host! == "www.youtube.com")
+    }
+    
+    func extractIdFromLink(link: NSURL?) -> String{
+        
+        let query = link!.query
+        let NSQuery: NSString = query!
+        let arrayOfQueries: NSArray = NSQuery.componentsSeparatedByString("&")
+        
+        for query in arrayOfQueries{
+            let arrayOfQuery: NSArray = query.componentsSeparatedByString("=")
+            if(arrayOfQuery[0] as String == "v"){
+                return arrayOfQuery[1] as String
+            }
+        }
+        
+        return ""
+    }
+    
+    func alertInvalidLink(){
+        var alert = UIAlertController(title: "Invalid Link", message: "Please enter a youtube link", preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
     }
     
     func timerDidFire(){
