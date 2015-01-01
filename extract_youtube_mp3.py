@@ -13,4 +13,6 @@ def extract_youtube_mp3(youtube_url=None):
 
 if __name__ == "__main__":
     youtube_url = raw_input("Please enter the url of the youtube video: ")
+    if "youtube.com" not in youtube_url:
+        raise Exception("This isn't a youtube link")
     extract_youtube_mp3(youtube_url)
