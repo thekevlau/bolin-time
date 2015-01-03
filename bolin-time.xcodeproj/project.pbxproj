@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		079C855E1A1093770066BE4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079C855D1A1093770066BE4C /* AppDelegate.swift */; };
-		079C85601A1093770066BE4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079C855F1A1093770066BE4C /* ViewController.swift */; };
+		079C85601A1093770066BE4C /* InputYoutubeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079C855F1A1093770066BE4C /* InputYoutubeViewController.swift */; };
 		079C85631A1093770066BE4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 079C85611A1093770066BE4C /* Main.storyboard */; };
 		079C85651A1093770066BE4C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 079C85641A1093770066BE4C /* Images.xcassets */; };
 		079C85681A1093770066BE4C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 079C85661A1093770066BE4C /* LaunchScreen.xib */; };
 		079C85741A1093770066BE4C /* bolin_timeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079C85731A1093770066BE4C /* bolin_timeTests.swift */; };
+		07EC8BAC1A51EAAA00FFCF48 /* ConfirmYoutubeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EC8BAB1A51EAAA00FFCF48 /* ConfirmYoutubeViewController.swift */; };
 		0AE73D1D1A2015D700DA2882 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE73D1C1A2015D700DA2882 /* CoreData.framework */; };
 		79D56613AF4C430192C383AB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 317B443CE46144ADB7757CA0 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -32,13 +33,14 @@
 		079C85581A1093770066BE4C /* bolin-time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bolin-time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		079C855C1A1093770066BE4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		079C855D1A1093770066BE4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		079C855F1A1093770066BE4C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		079C855F1A1093770066BE4C /* InputYoutubeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputYoutubeViewController.swift; sourceTree = "<group>"; };
 		079C85621A1093770066BE4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		079C85641A1093770066BE4C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		079C85671A1093770066BE4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		079C856D1A1093770066BE4C /* bolin-timeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "bolin-timeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		079C85721A1093770066BE4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		079C85731A1093770066BE4C /* bolin_timeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bolin_timeTests.swift; sourceTree = "<group>"; };
+		07EC8BAB1A51EAAA00FFCF48 /* ConfirmYoutubeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmYoutubeViewController.swift; sourceTree = "<group>"; };
 		0AE73D1C1A2015D700DA2882 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		317B443CE46144ADB7757CA0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		949080E9CFB34EFD8C1042DD /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
@@ -89,7 +91,8 @@
 			children = (
 				07057A201A19436D004546F1 /* YTPlayerView-Bridging-Header.h */,
 				079C855D1A1093770066BE4C /* AppDelegate.swift */,
-				079C855F1A1093770066BE4C /* ViewController.swift */,
+				079C855F1A1093770066BE4C /* InputYoutubeViewController.swift */,
+				07EC8BAB1A51EAAA00FFCF48 /* ConfirmYoutubeViewController.swift */,
 				079C85611A1093770066BE4C /* Main.storyboard */,
 				079C85641A1093770066BE4C /* Images.xcassets */,
 				079C85661A1093770066BE4C /* LaunchScreen.xib */,
@@ -267,7 +270,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				079C85601A1093770066BE4C /* ViewController.swift in Sources */,
+				079C85601A1093770066BE4C /* InputYoutubeViewController.swift in Sources */,
+				07EC8BAC1A51EAAA00FFCF48 /* ConfirmYoutubeViewController.swift in Sources */,
 				079C855E1A1093770066BE4C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

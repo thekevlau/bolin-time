@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  InputYoutube.swift
 //  bolin-time
 //
 //  Created by alexfung on 2014-11-10.
@@ -9,10 +9,11 @@
 import UIKit
 import CoreData
 
-class ViewController: UIViewController {
-    @IBOutlet var playerView: YTPlayerView!
+class InputYoutubeViewController: UIViewController {
     @IBOutlet var datePicker: UIDatePicker!
     @IBOutlet var linkField: UITextField!
+    var controller: ConfirmYoutubeViewController!
+    var id: String!
     
     lazy var managedObjectContext : NSManagedObjectContext? = {
         let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
@@ -24,6 +25,12 @@ class ViewController: UIViewController {
         
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        controller = segue.destinationViewController as ConfirmYoutubeViewController
+        print(controller)
+        controller.loadID(id)
+    }
 
     @IBAction func works(sender: AnyObject) {
         let link = NSURL(string: linkField.text)
@@ -32,12 +39,14 @@ class ViewController: UIViewController {
             return
         }
         
-        playerView.loadWithVideoId(extractIdFromLink(link))
+        id = extractIdFromLink(link)
         
         var date = datePicker.date
         var now = NSDate()
         var interval = date.timeIntervalSinceDate(now)
         NSTimer.scheduledTimerWithTimeInterval(interval, target: self, selector: Selector("timerDidFire"), userInfo: nil, repeats: false)
+        
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -80,7 +89,7 @@ class ViewController: UIViewController {
     
     func timerDidFire(){
         println("Fire!")
-        playerView.playVideo()
+        //playerView.playVideo()
     }
 
 }
